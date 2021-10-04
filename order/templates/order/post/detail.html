@@ -1,0 +1,13 @@
+{% extends "order/base.html" %}
+{% block content %}
+    <h1>{{ post.title }}</h1><br/>
+    <h1>{{ post.slug }}</h1><br/>
+    <h1>{{ post.body }}</h1><br/>
+    <h1>{{ post.publish }}</h1><br/>
+    <h1>{{ post.status }}</h1><br/>
+
+
+    <p>
+        <a herf="{% urls 'order:post_share' post.id">Share this post</a>
+    </p>
+{% endblock%}
