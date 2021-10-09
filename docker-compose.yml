@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   restful-api:
-    image: restful-api-service:restful-api
+    image: restful-api-service_1:restful-api
     network_mode: host
     build:
       context: .
